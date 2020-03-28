@@ -3,7 +3,7 @@
   <model name='Building'>
     <model name='parrot_bebop_2'>
       <static>0</static>
-      <pose frame=''>0.104049 -0.03723 0.660735 0 -0 0</pose>
+      <pose frame=''>-0.503764 -0.503101 0.554535 0 -0 0</pose>
       <link name='body'>
         <inertial>
           <mass>0.503</mass>
@@ -144,7 +144,7 @@
           </material>
         </visual>
       </link>
-      <pose frame=''>0.531139 -0.109204 0.583721 0 -0 0</pose>
+      <pose frame=''>0.020917 -0.538846 0.491845 0 -0 0</pose>
     </model>
     <model name='postbox'>
       <static>1</static>
@@ -164,7 +164,7 @@
           </geometry>
         </visual>
       </link>
-      <pose frame=''>2.11763 2.56299 -0.414818 0 -0 0</pose>
+      <pose frame=''>0.901192 1.81672 -0.523188 0 -0 0</pose>
     </model>
     <model name='table'>
       <static>0</static>
@@ -296,63 +296,7 @@
           </material>
         </visual>
       </link>
-      <pose frame=''>0.12359 -0.208279 -0.414818 0 -0 0</pose>
-    </model>
-    <model name='washer'>
-      <link name='link'>
-        <pose frame=''>0 0 0.001 0 -0 0</pose>
-        <inertial>
-          <mass>0.0122</mass>
-          <inertia>
-            <ixx>1.08758e-06</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1.08758e-06</iyy>
-            <iyz>0</iyz>
-            <izz>2.16703e-06</izz>
-          </inertia>
-        </inertial>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://washer/meshes/washer.dae</uri>
-            </mesh>
-          </geometry>
-          <surface>
-            <contact>
-              <poissons_ratio>0.305</poissons_ratio>
-              <elastic_modulus>2e+11</elastic_modulus>
-              <ode>
-                <kp>100000</kp>
-                <kd>100</kd>
-                <max_vel>100</max_vel>
-                <min_depth>0.001</min_depth>
-              </ode>
-            </contact>
-            <friction>
-              <torsional>
-                <coefficient>1</coefficient>
-                <use_patch_radius>0</use_patch_radius>
-                <surface_radius>0.01</surface_radius>
-              </torsional>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://washer/meshes/washer.dae</uri>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-          </material>
-        </visual>
-      </link>
-      <pose frame=''>-2.87641 -2.20828 -0.414818 0 -0 0</pose>
+      <pose frame=''>-0.418345 -0.774776 -0.523188 0 -0 0</pose>
     </model>
     <static>0</static>
     <allow_auto_disable>1</allow_auto_disable>
